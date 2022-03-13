@@ -1,3 +1,6 @@
+### Physical view
+![Physical view](physical-views.png)
+
 ### Swagger url
 - Swagger Url -> http://localhost:8080/swagger-ui/index.html#/
 - Sample data -> scripts/sample-booking.json
