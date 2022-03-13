@@ -50,3 +50,13 @@ docker container stop mongo-third-shard2
 docker container stop mongo-third-shard3
 docker container start mongo-third-shard1 mongo-third-shard2 mongo-third-shard3
 ```
+
+### Mock data generator
+https://www.coderstool.com/json-test-data-generator
+```
+{
+  "_id": "{{uuid}}",
+  "price": {{float 10000 70000 0}},
+  "userId": "{{uuid}}"
+}
+```
