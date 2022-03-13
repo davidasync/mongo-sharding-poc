@@ -1,3 +1,6 @@
+### Physical view
+![Physical view](physical-views.png)
+
 ### Swagger url
 - Swagger Url -> http://localhost:8080/swagger-ui/index.html#/
 - Sample data -> scripts/sample-booking.json
@@ -17,6 +20,9 @@ sh.addShard("rnd-third-shard-replica-set/mongo-third-shard1:27031,mongo-third-sh
 sh.enableSharding("mydb")
 sh.shardCollection("mydb.bookings", {"userId": "hashed"})
 ```
+
+### Start the application
+./gradlew bootrun
 
 ### Shortcuts
 ```
@@ -43,4 +49,14 @@ docker container stop mongo-third-shard1
 docker container stop mongo-third-shard2
 docker container stop mongo-third-shard3
 docker container start mongo-third-shard1 mongo-third-shard2 mongo-third-shard3
+```
+
+### Mock data generator
+https://www.coderstool.com/json-test-data-generator
+```
+{
+  "_id": "{{uuid}}",
+  "price": {{float 10000 70000 0}},
+  "userId": "{{uuid}}"
+}
 ```
