@@ -21,6 +21,9 @@ sh.enableSharding("mydb")
 sh.shardCollection("mydb.bookings", {"userId": "hashed"})
 ```
 
+### Start the application
+./gradlew bootrun
+
 ### Shortcuts
 ```
 docker container exec -it mongo-config-server1 /bin/sh
